@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Siddartha Danthuluri – Strategic AI Engineering & Business Analytics portfolio showcasing work in ETL pipelines, agentic workflows, and data-driven decision-making." />
+  <title>Siddartha Danthuluri | AI Engineering & Business Analytics</title>
+
+  <!-- Google Font: Inter for clean modern typography (free, no paid dependency) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION BAR
+       Fixed top bar with links to each section.
+       JS adds the 'scrolled' class on scroll.
+  ============================================= -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">SD<span class="accent">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"       class="nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#contact"    class="nav-link cta-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+         Full-viewport splash with name, tagline,
+         short summary, and two CTA buttons.
+    ============================================= -->
+    <section id="home" class="hero">
+      <!-- Subtle animated background grid overlay -->
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Siddartha<br /><span class="accent">Danthuluri</span></h1>
+        <p class="hero-title">Strategic AI Engineering &amp; Business Analytics</p>
+        <p class="hero-summary">
+          Bridging raw data and actionable intelligence through Python, SQL, and Microsoft Fabric.
+          Architecting ETL pipelines and agentic AI workflows that transform traditional business
+          units into data-first organizations.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Decorative floating tags -->
+      <div class="hero-tags" aria-hidden="true">
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Microsoft Fabric</span>
+        <span class="tag">n8n</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">RAG</span>
+        <span class="tag">ETL</span>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-dot"></span>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         ABOUT SECTION
+         Brief narrative paragraph.
+    ============================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="about-grid">
+          <!-- Avatar / illustration block -->
+          <div class="about-avatar" aria-hidden="true">
+            <div class="avatar-ring">
+              <div class="avatar-initials">SD</div>
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
+
+          <!-- Text block -->
+          <div class="about-text">
+            <p>
+              I'm a <strong>Strategic AI Engineering candidate</strong> and <strong>MS in Business Analytics</strong>
+              student (University of New Haven, 2025) with boots-on-the-ground experience driving high-impact
+              operations at <strong>Uber</strong> and <strong>S.S. Constructions</strong>.
+            </p>
+            <p>
+              My superpower is <em>bridging the gap between raw data and actionable intelligence</em>. Whether
+              it's architecting end-to-end ETL pipelines from Oracle to SQL, building Power BI dashboards that
+              cut reporting time by 15–20 hours a week, or deploying automated agentic workflows powered by
+              n8n and the OpenAI API — I turn messy data into decisions.
+            </p>
+            <p>
+              Beyond the technical stack, I bring a people-first leadership mindset refined by managing a
+              17-person outreach team and leading the digital overhaul of 7+ business departments. My goal is
+              to leverage <strong>Generative AI and machine learning</strong> to transform traditional business
+              units into data-first organizations that execute faster and smarter.
+            </p>
+
+            <!-- Quick-fact chips -->
+            <ul class="about-chips" aria-label="Quick facts">
+              <li>📍 Saint Augustine, FL</li>
+              <li>🎓 MS Business Analytics – 2025</li>
+              <li>🤖 Generative AI &amp; MLOps</li>
+              <li>📊 ETL &amp; BI Pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         EXPERIENCE SECTION
+         Timeline-style cards for each role.
+    ============================================= -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+
+        <div class="timeline">
+
+          <!-- --- Uber: Team Lead --- -->
+          <article class="timeline-card" tabindex="0">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Team Lead</h3>
+                <p class="tc-company">Uber</p>
+              </div>
+              <span class="tc-date">Jan 2022 – Dec 2022</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Directed a 17-person outreach team, deploying <strong>Power BI dashboards</strong> to track KPIs in real time — improving outreach efficiency by <strong>6%</strong>.</li>
+              <li>Applied predictive analytics to historical campaign data to pinpoint high-conversion demographics, enabling precision resource allocation across territories.</li>
+              <li>Eliminated manual weekly reporting by building automated Power BI workflows, reclaiming <strong>15–20 hours per week</strong> for the team to focus on strategic outreach.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Power BI</span><span>Predictive Analytics</span><span>Team Leadership</span>
+            </div>
+          </article>
+
+          <!-- --- Uber: COE Specialist I --- -->
+          <article class="timeline-card" tabindex="0">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">COE Specialist I</h3>
+                <p class="tc-company">Uber</p>
+              </div>
+              <span class="tc-date">Prior to Jan 2022</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Architected automated <strong>ETL pipelines</strong> migrating data from Oracle to SQL, establishing a single source of truth for cross-functional reporting.</li>
+              <li>Engineered Power BI and Tableau dashboards for risk management KPIs, accelerating executive decision speed by <strong>10%</strong>.</li>
+              <li>Leveraged advanced SQL and statistical modelling to surface <strong>15+ operational bottlenecks</strong>, directly informing process re-engineering initiatives.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>ETL</span><span>SQL</span><span>Tableau</span><span>Risk Analytics</span>
+            </div>
+          </article>
+
+          <!-- --- S.S. Constructions: Business Unit Head --- -->
+          <article class="timeline-card" tabindex="0">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Business Unit Head</h3>
+                <p class="tc-company">S.S. Constructions</p>
+              </div>
+              <span class="tc-date">Jun 2018 – Dec 2021</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Spearheaded a full-scale digital overhaul across <strong>7+ departments</strong>, centralising fragmented records into a unified SQL-ready database for the first time.</li>
+              <li>Designed resource-allocation models that identified financial inefficiencies, reducing organisational waste by approximately <strong>5%</strong>.</li>
+              <li>Ran data-driven digital marketing campaigns that <strong>doubled lead generation</strong> while cutting cost-per-acquisition through audience segmentation and A/B testing.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>SQL</span><span>Digital Marketing</span><span>Resource Modelling</span><span>Operations</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         PROJECTS SECTION
+         Card grid layout (2–3 cols on desktop).
+    ============================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <p class="section-sub">A selection of AI, analytics, and automation work.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">🤖</div>
+            <h3 class="pc-title">No-Code HR Agentic Workflows</h3>
+            <p class="pc-desc">Built a fully automated resume-builder pipeline using <strong>n8n</strong> and the <strong>OpenAI API</strong>. The agent parses job descriptions, tailors candidate profiles, and generates submission-ready documents — zero manual effort required after initial setup.</p>
+            <div class="pc-tags"><span>n8n</span><span>OpenAI API</span><span>Agentic AI</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">📝</div>
+            <h3 class="pc-title">Project_Blurr</h3>
+            <p class="pc-desc">A Notion-inspired <strong>LLM-assisted note-taker and project manager</strong> that uses semantic chunking and retrieval-augmented generation (RAG) to surface the most relevant notes on demand — turning a scattered knowledge base into an intelligent second brain.</p>
+            <div class="pc-tags"><span>LangChain</span><span>RAG</span><span>Embeddings</span><span>Pinecone</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">🧹</div>
+            <h3 class="pc-title">The DeDuper</h3>
+            <p class="pc-desc">A production-level <strong>data cleansing agent</strong> that automatically detects, scores, and resolves duplicate records across large datasets. Designed for enterprise ETL environments where data fidelity directly affects downstream analytics.</p>
+            <div class="pc-tags"><span>Python</span><span>ETL</span><span>Data Quality</span><span>SQL</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">🔮</div>
+            <h3 class="pc-title">AI-Powered Predictive Customer Intelligence</h3>
+            <p class="pc-desc">Developed an end-to-end <strong>predictive analytics system</strong> that clusters customers by behavioural patterns, forecasts churn probability, and surfaces next-best-action recommendations — enabling truly personalised engagement at scale.</p>
+            <div class="pc-tags"><span>Python</span><span>ML</span><span>Clustering</span><span>Power BI</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">🚗</div>
+            <h3 class="pc-title">Understanding Uber Pricing: Surge Dynamics</h3>
+            <p class="pc-desc">Analysed Uber fare and surge data to map <strong>spatio-temporal pricing patterns</strong> across urban hotspots. Produced interactive visualisations revealing how demand elasticity, weather events, and time-of-day compound surge multipliers.</p>
+            <div class="pc-tags"><span>Python</span><span>Tableau</span><span>Geospatial</span><span>Analytics</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">🗂️</div>
+            <h3 class="pc-title">Too Many Tabs Assistant</h3>
+            <p class="pc-desc">A browser productivity tool using <strong>Power Automate</strong> that indexes open tabs and enables natural-language recall — "where was that article about embeddings?" — so you never lose a research thread again.</p>
+            <div class="pc-tags"><span>Power Automate</span><span>Automation</span><span>Productivity</span></div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="pc-icon">📊</div>
+            <h3 class="pc-title">Excel-OneDrive Auto-Sync Master</h3>
+            <p class="pc-desc">Engineered a centralised <strong>table-automation framework</strong> that keeps multiple Excel workbooks in sync via OneDrive, eliminating version conflicts and manual reconciliation for distributed teams handling shared datasets.</p>
+            <div class="pc-tags"><span>Power Automate</span><span>Excel</span><span>OneDrive</span><span>ETL</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         SKILLS SECTION
+         Three-column grid: Core / Data & AI / Platforms
+    ============================================= -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; <span class="accent">Expertise</span></h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="sg-title"><span class="sg-icon">💡</span> Core &amp; Leadership</h3>
+            <ul class="skill-list">
+              <li>Strategic Planning &amp; Execution</li>
+              <li>Coaching &amp; Tailored Feedback</li>
+              <li>Conflict Management</li>
+              <li>Critical Thinking</li>
+              <li>Performance &amp; Results Review</li>
+              <li>Risk Analysis</li>
+              <li>Stakeholder Engagement</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="sg-title"><span class="sg-icon">🤖</span> Data &amp; AI</h3>
+            <ul class="skill-list">
+              <li>Python &amp; SQL</li>
+              <li>Microsoft Fabric &amp; ETL Pipelines</li>
+              <li>Retrieval-Augmented Generation (RAG)</li>
+              <li>Semantic Chunking &amp; Embeddings</li>
+              <li>Context Engineering</li>
+              <li>Fine-tuning &amp; Hallucination Handling</li>
+              <li>LangChain &amp; OpenAI API</li>
+              <li>Pinecone Vector Store</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="sg-title"><span class="sg-icon">🛠️</span> Platforms &amp; Tools</h3>
+            <ul class="skill-list">
+              <li>Power BI &amp; Tableau</li>
+              <li>n8n Workflow Automation</li>
+              <li>Power Apps &amp; Power Automate</li>
+              <li>Salesforce &amp; Jira</li>
+              <li>GitHub &amp; VS Code</li>
+              <li>React (Front-end)</li>
+              <li>Oracle SQL &amp; Data Warehousing</li>
+              <li>Azure / Microsoft Ecosystem</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         EDUCATION SECTION
+         Simple credential cards.
+    ============================================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">Education</span></h2>
+
+        <div class="education-list">
+
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-body">
+              <h3 class="edu-degree">M.S. in Business Analytics</h3>
+              <p class="edu-school">University of New Haven</p>
+              <p class="edu-date">Expected May 2025</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">⚙️</div>
+            <div class="edu-body">
+              <h3 class="edu-degree">B.Tech in Electronics &amp; Communication Engineering</h3>
+              <p class="edu-school">GITAM University, India</p>
+              <p class="edu-date">Graduated Jun 2018</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">📚</div>
+            <div class="edu-body">
+              <h3 class="edu-degree">High School Diploma</h3>
+              <p class="edu-school">Sri Chaitanya College, India</p>
+              <p class="edu-date">Graduated Mar 2014</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         CONTACT SECTION
+         Location, email, phone + social placeholders.
+    ============================================= -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-sub">
+          I'm open to roles in AI Engineering, Data Analytics, and related fields.
+          Drop me an email or connect on social — I respond within 24 hours.
+        </p>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <h3>Location</h3>
+            <p>Saint Augustine, Florida</p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <h3>Email</h3>
+            <!-- mailto link lets users click to open their email client -->
+            <a href="mailto:siddarthavarmadanthuluri@gmail.com">siddarthavarmadanthuluri@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📱</span>
+            <h3>Phone</h3>
+            <!-- tel link lets mobile users dial directly -->
+            <a href="tel:+19164773266">(916) 477-3266</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">💼</span>
+            <h3>LinkedIn</h3>
+            <!-- Replace href with your actual LinkedIn URL -->
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">🐙</span>
+            <h3>GitHub</h3>
+            <!-- Replace href with your actual GitHub URL -->
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Designed &amp; built by <span class="accent">Siddartha Danthuluri</span> · Saint Augustine, FL</p>
+      <p class="footer-sub">© <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
