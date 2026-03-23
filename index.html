@@ -40,47 +40,46 @@
   </header>
 
 
+  <!-- Floating Social Sidebar -->
+  <aside class="social-sidebar">
+    <a href="https://linkedin.com/in/siddartha-danthuluri" target="_blank" class="sidebar-icon" title="LinkedIn">in</a>
+    <a href="https://github.com/siddartha" target="_blank" class="sidebar-icon" title="GitHub">gh</a>
+    <a href="mailto:siddarthavarmadanthuluri@gmail.com" class="sidebar-icon" title="Email">@</a>
+    <a href="#projects" class="sidebar-icon" title="Projects">pj</a>
+    <a href="#contact" class="sidebar-icon" title="Contact">co</a>
+  </aside>
+
   <main>
 
     <!-- =============================================
-         HERO SECTION
-         Full-viewport splash with name, tagline,
-         short summary, and two CTA buttons.
+         HERO SECTION (2-Column Layout)
     ============================================= -->
     <section id="home" class="hero">
-      <!-- Subtle animated background grid overlay -->
       <div class="hero-grid-overlay" aria-hidden="true"></div>
 
-      <div class="hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Siddartha<br /><span class="accent">Danthuluri</span></h1>
-        <p class="hero-title">Strategic AI Engineering &amp; Business Analytics</p>
-        <p class="hero-summary">
-          Bridging raw data and actionable intelligence through Python, SQL, and Microsoft Fabric.
-          Architecting ETL pipelines and agentic AI workflows that transform traditional business
-          units into data-first organizations.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      <div class="hero-container container">
+        
+        <!-- Left Column: Image -->
+        <div class="hero-image-col">
+          <div class="hero-img-wrapper">
+            <img src="profile.jpg" alt="Siddartha Danthuluri" class="hero-profile-img">
+          </div>
         </div>
-      </div>
 
-      <!-- Decorative floating tags -->
-      <div class="hero-tags" aria-hidden="true">
-        <span class="tag">Python</span>
-        <span class="tag">SQL</span>
-        <span class="tag">Microsoft Fabric</span>
-        <span class="tag">n8n</span>
-        <span class="tag">LangChain</span>
-        <span class="tag">Power BI</span>
-        <span class="tag">RAG</span>
-        <span class="tag">ETL</span>
-      </div>
+        <!-- Right Column: Text & Pills -->
+        <div class="hero-text-col">
+          <h1 class="hero-name">Hi, I'm Siddartha<br/>Danthuluri</h1>
+          <p class="hero-summary">
+            As a Strategic AI Engineering candidate and MS in Business Analytics student, I bridge raw data and actionable intelligence through Python, SQL, and Microsoft Fabric.
+          </p>
+          <div class="hero-pills">
+            <a href="#contact" class="pill-btn primary">Resume &nbsp;&gt;</a>
+            <a href="https://linkedin.com/in/siddartha-danthuluri" target="_blank" class="pill-btn secondary"><span class="icon">in</span> LinkedIn</a>
+            <a href="https://github.com/siddartha" target="_blank" class="pill-btn secondary"><span class="icon">gh</span> GitHub</a>
+          </div>
+          <p class="hero-location-text">Based in Florida • Open to Data/AI roles</p>
+        </div>
 
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator" aria-hidden="true">
-        <span class="scroll-dot"></span>
       </div>
     </section>
 
@@ -96,7 +95,7 @@
           <!-- Avatar / illustration block -->
           <div class="about-avatar" aria-hidden="true">
             <div class="avatar-ring">
-              <div class="avatar-initials">SD</div>
+              <img src="profile.jpg" alt="Siddartha" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
             </div>
             <div class="avatar-glow"></div>
           </div>
@@ -135,69 +134,73 @@
 
 
     <!-- =============================================
-         EXPERIENCE SECTION
-         Timeline-style cards for each role.
+         EXPERIENCE SECTION (Horizontal Tiles)
     ============================================= -->
     <section id="experience" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+        <h2 class="section-title-underlined">Experience</h2>
 
-        <div class="timeline">
+        <div class="experience-tile-list">
 
           <!-- --- Uber: Team Lead --- -->
-          <article class="timeline-card" tabindex="0">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Team Lead</h3>
-                <p class="tc-company">Uber</p>
+          <article class="exp-row-tile">
+            <div class="exp-tile-header">
+              <div class="exp-tile-title-group">
+                <span class="exp-briefcase-icon">💼</span>
+                <h3 class="exp-tile-role">Team Lead &bull; <span class="exp-tile-company">Uber</span></h3>
               </div>
-              <span class="tc-date">Jan 2022 – Dec 2022</span>
+              <span class="exp-tile-date">Jan 2022 – Dec 2022</span>
             </div>
-            <ul class="tc-bullets">
-              <li>Directed a 17-person outreach team, deploying <strong>Power BI dashboards</strong> to track KPIs in real time — improving outreach efficiency by <strong>6%</strong>.</li>
-              <li>Applied predictive analytics to historical campaign data to pinpoint high-conversion demographics, enabling precision resource allocation across territories.</li>
-              <li>Eliminated manual weekly reporting by building automated Power BI workflows, reclaiming <strong>15–20 hours per week</strong> for the team to focus on strategic outreach.</li>
-            </ul>
-            <div class="tc-tags">
-              <span>Power BI</span><span>Predictive Analytics</span><span>Team Leadership</span>
+            <div class="exp-tile-body">
+              <ul class="tc-bullets">
+                <li>Directed a 17-person outreach team, deploying <strong>Power BI dashboards</strong> to track KPIs in real time — improving outreach efficiency by <strong>6%</strong>.</li>
+                <li>Applied predictive analytics to historical campaign data to pinpoint high-conversion demographics.</li>
+                <li>Eliminated manual weekly reporting by building automated Power BI workflows.</li>
+              </ul>
             </div>
           </article>
 
           <!-- --- Uber: COE Specialist I --- -->
-          <article class="timeline-card" tabindex="0">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">COE Specialist I</h3>
-                <p class="tc-company">Uber</p>
+          <article class="exp-row-tile">
+            <div class="exp-tile-header">
+              <div class="exp-tile-title-group">
+                <span class="exp-briefcase-icon">💼</span>
+                <h3 class="exp-tile-role">COE Specialist I &bull; <span class="exp-tile-company">Uber</span></h3>
               </div>
-              <span class="tc-date">Prior to Jan 2022</span>
+              <span class="exp-tile-date">Prior to Jan 2022</span>
             </div>
-            <ul class="tc-bullets">
-              <li>Architected automated <strong>ETL pipelines</strong> migrating data from Oracle to SQL, establishing a single source of truth for cross-functional reporting.</li>
-              <li>Engineered Power BI and Tableau dashboards for risk management KPIs, accelerating executive decision speed by <strong>10%</strong>.</li>
-              <li>Leveraged advanced SQL and statistical modelling to surface <strong>15+ operational bottlenecks</strong>, directly informing process re-engineering initiatives.</li>
-            </ul>
-            <div class="tc-tags">
-              <span>ETL</span><span>SQL</span><span>Tableau</span><span>Risk Analytics</span>
+            <div class="exp-tile-body">
+              <ul class="tc-bullets">
+                <li>Architected automated <strong>ETL pipelines</strong> migrating data from Oracle to SQL, establishing a single source of truth for cross-functional reporting.</li>
+                <li>Engineered Power BI and Tableau dashboards for risk management KPIs.</li>
+              </ul>
             </div>
           </article>
 
           <!-- --- S.S. Constructions: Business Unit Head --- -->
-          <article class="timeline-card" tabindex="0">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Business Unit Head</h3>
-                <p class="tc-company">S.S. Constructions</p>
+          <article class="exp-row-tile">
+            <div class="exp-tile-header">
+              <div class="exp-tile-title-group">
+                <span class="exp-briefcase-icon">💼</span>
+                <h3 class="exp-tile-role">Business Unit Head &bull; <span class="exp-tile-company">S.S. Constructions</span></h3>
               </div>
-              <span class="tc-date">Jun 2018 – Dec 2021</span>
+              <span class="exp-tile-date">Jun 2018 – Dec 2021</span>
             </div>
-            <ul class="tc-bullets">
-              <li>Spearheaded a full-scale digital overhaul across <strong>7+ departments</strong>, centralising fragmented records into a unified SQL-ready database for the first time.</li>
-              <li>Designed resource-allocation models that identified financial inefficiencies, reducing organisational waste by approximately <strong>5%</strong>.</li>
-              <li>Ran data-driven digital marketing campaigns that <strong>doubled lead generation</strong> while cutting cost-per-acquisition through audience segmentation and A/B testing.</li>
-            </ul>
-            <div class="tc-tags">
-              <span>SQL</span><span>Digital Marketing</span><span>Resource Modelling</span><span>Operations</span>
+            <div class="exp-tile-body">
+              <ul class="tc-bullets">
+                <li>Spearheaded a full-scale digital overhaul across <strong>7+ departments</strong>, centralising fragmented records into a unified SQL-ready database.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- --- AIESEC: Project Lead (Volunteer) --- -->
+          <article class="exp-row-tile">
+            <div class="exp-tile-header">
+              <div class="exp-tile-title-group">
+                <span class="exp-briefcase-icon">💼</span>
+                <h3 class="exp-tile-role">Project Lead (Volunteer) &bull; <span class="exp-tile-company">AIESEC</span></h3>
+              </div>
+              <span class="exp-tile-date">Jun 2016 – Jul 2016</span>
             </div>
           </article>
 
@@ -272,55 +275,57 @@
 
 
     <!-- =============================================
-         SKILLS SECTION
-         Three-column grid: Core / Data & AI / Platforms
+         SKILLS / TECHNOLOGIES SECTION
     ============================================= -->
     <section id="skills" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Skills &amp; <span class="accent">Expertise</span></h2>
+        <h2 class="section-title-underlined">Technologies</h2>
+        <p class="section-sub">A snapshot of the tools I use to build data systems and agentic workflows.</p>
 
-        <div class="skills-grid">
+        <div class="tech-grid">
 
-          <div class="skill-group">
-            <h3 class="sg-title"><span class="sg-icon">💡</span> Core &amp; Leadership</h3>
-            <ul class="skill-list">
-              <li>Strategic Planning &amp; Execution</li>
-              <li>Coaching &amp; Tailored Feedback</li>
-              <li>Conflict Management</li>
-              <li>Critical Thinking</li>
-              <li>Performance &amp; Results Review</li>
-              <li>Risk Analysis</li>
-              <li>Stakeholder Engagement</li>
-              <li>Time Management</li>
-            </ul>
+          <div class="tech-card">
+            <h3 class="tech-card-title"><span class="tech-icon">💡</span> Core &amp; Leadership</h3>
+            <div class="tech-pills">
+              <span class="skill-pill">Strategic Planning</span>
+              <span class="skill-pill">Coaching &amp; Feedback</span>
+              <span class="skill-pill">Conflict Management</span>
+              <span class="skill-pill">Critical Thinking</span>
+              <span class="skill-pill">Performance Review</span>
+              <span class="skill-pill">Risk Analysis</span>
+              <span class="skill-pill">Stakeholder Engagement</span>
+              <span class="skill-pill">Time Management</span>
+            </div>
           </div>
 
-          <div class="skill-group">
-            <h3 class="sg-title"><span class="sg-icon">🤖</span> Data &amp; AI</h3>
-            <ul class="skill-list">
-              <li>Python &amp; SQL</li>
-              <li>Microsoft Fabric &amp; ETL Pipelines</li>
-              <li>Retrieval-Augmented Generation (RAG)</li>
-              <li>Semantic Chunking &amp; Embeddings</li>
-              <li>Context Engineering</li>
-              <li>Fine-tuning &amp; Hallucination Handling</li>
-              <li>LangChain &amp; OpenAI API</li>
-              <li>Pinecone Vector Store</li>
-            </ul>
+          <div class="tech-card">
+            <h3 class="tech-card-title"><span class="tech-icon">🤖</span> Data &amp; Generative AI</h3>
+            <div class="tech-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Microsoft Fabric</span>
+              <span class="skill-pill">RAG</span>
+              <span class="skill-pill">Semantic Chunking</span>
+              <span class="skill-pill">Fine-tuning</span>
+              <span class="skill-pill">LangChain</span>
+              <span class="skill-pill">OpenAI API</span>
+              <span class="skill-pill">Pinecone</span>
+            </div>
           </div>
 
-          <div class="skill-group">
-            <h3 class="sg-title"><span class="sg-icon">🛠️</span> Platforms &amp; Tools</h3>
-            <ul class="skill-list">
-              <li>Power BI &amp; Tableau</li>
-              <li>n8n Workflow Automation</li>
-              <li>Power Apps &amp; Power Automate</li>
-              <li>Salesforce &amp; Jira</li>
-              <li>GitHub &amp; VS Code</li>
-              <li>React (Front-end)</li>
-              <li>Oracle SQL &amp; Data Warehousing</li>
-              <li>Azure / Microsoft Ecosystem</li>
-            </ul>
+          <div class="tech-card">
+            <h3 class="tech-card-title"><span class="tech-icon">🛠️</span> Platforms &amp; Tools</h3>
+            <div class="tech-pills">
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">n8n Workflow</span>
+              <span class="skill-pill">Power Apps</span>
+              <span class="skill-pill">Salesforce</span>
+              <span class="skill-pill">Jira</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">Oracle SQL</span>
+              <span class="skill-pill">Azure</span>
+            </div>
           </div>
 
         </div>
@@ -329,42 +334,43 @@
 
 
     <!-- =============================================
-         EDUCATION SECTION
-         Simple credential cards.
+         EDUCATION SECTION (Tiled Layout)
     ============================================= -->
     <section id="education" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="accent">Education</span></h2>
+        <h2 class="section-title-underlined">Education</h2>
 
-        <div class="education-list">
-
-          <div class="edu-card">
-            <div class="edu-icon">🎓</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">M.S. in Business Analytics</h3>
-              <p class="edu-school">University of New Haven</p>
-              <p class="edu-date">Expected May 2025</p>
-            </div>
-          </div>
-
-          <div class="edu-card">
-            <div class="edu-icon">⚙️</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">B.Tech in Electronics &amp; Communication Engineering</h3>
-              <p class="edu-school">GITAM University, India</p>
-              <p class="edu-date">Graduated Jun 2018</p>
-            </div>
-          </div>
-
-          <div class="edu-card">
-            <div class="edu-icon">📚</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">High School Diploma</h3>
-              <p class="edu-school">Sri Chaitanya College, India</p>
-              <p class="edu-date">Graduated Mar 2014</p>
-            </div>
-          </div>
-
+        <div class="edu-layout-grid">
+           <!-- Placeholder for university image -->
+           <div class="edu-image-container">
+              <img src="profile.jpg" alt="University" class="edu-uni-img">
+           </div>
+           
+           <div class="edu-cards-column">
+             <div class="edu-tile">
+                <div class="edu-tile-icon">🎓</div>
+                <div class="edu-tile-content">
+                  <h3 class="edu-tile-degree">M.S. in Business Analytics</h3>
+                  <p class="edu-tile-school">University of New Haven</p>
+                  <p class="edu-tile-date">Aug 2023 – May 2025</p>
+                  <div class="edu-tile-tags">
+                     <span class="skill-pill">Data Mining</span><span class="skill-pill">Machine Learning</span><span class="skill-pill">Business Strategy</span>
+                  </div>
+                </div>
+             </div>
+             
+             <div class="edu-tile">
+                <div class="edu-tile-icon">🎓</div>
+                <div class="edu-tile-content">
+                  <h3 class="edu-tile-degree">B.Tech in Electronics &amp; Communication</h3>
+                  <p class="edu-tile-school">GITAM University, India</p>
+                  <p class="edu-tile-date">Aug 2014 – May 2018</p>
+                  <div class="edu-tile-tags">
+                     <span class="skill-pill">Signal Processing</span><span class="skill-pill">Algorithms</span>
+                  </div>
+                </div>
+             </div>
+           </div>
         </div>
       </div>
     </section>
