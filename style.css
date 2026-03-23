@@ -11,20 +11,20 @@
 ----------------------------------------------- */
 :root {
   /* Colour palette */
-  --bg-primary:    #0a0e17;      /* deepest background */
-  --bg-secondary:  #111621;      /* cards, nav */
-  --bg-card:       #151c2c;      /* elevated surface */
-  --bg-alt:        #0d1120;      /* alternating sections */
+  --bg-primary:    #000000;      /* deepest background */
+  --bg-secondary:  #0a0a0a;      /* cards, nav */
+  --bg-card:       #111111;      /* elevated surface */
+  --bg-alt:        #050505;      /* alternating sections */
 
-  --accent:        #6c63ff;      /* electric violet */
-  --accent-glow:   rgba(108, 99, 255, 0.25);
-  --accent-light:  #a29bff;
+  --accent:        #888888;      /* grey accent */
+  --accent-glow:   rgba(136, 136, 136, 0.25);
+  --accent-light:  #cccccc;      /* light grey */
 
   --text-primary:  #e8eaf0;      /* body text */
-  --text-secondary:#9ea8be;      /* muted / labels */
-  --text-dim:      #5a6480;      /* very muted */
+  --text-secondary:#b0b0b0;      /* muted / labels */
+  --text-dim:      #7a7a7a;      /* very muted */
 
-  --border:        rgba(108, 99, 255, 0.15);
+  --border:        rgba(136, 136, 136, 0.15);
   --border-card:   rgba(232, 234, 240, 0.07);
 
   /* Typography */
@@ -905,4 +905,259 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 400px) {
   .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   NEW TILED REDESIGN STYLES
+   (Floating Sidebar, Hero 2-Col, Edu Tiles, Exp Rows, Tech Pills)
+============================================= */
+
+/* 1. Floating Social Sidebar */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  padding: 0.8rem 0.5rem;
+  gap: 1rem;
+  z-index: 9999;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+.sidebar-icon {
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+.sidebar-icon:hover {
+  color: var(--accent-light);
+  transform: scale(1.1);
+}
+
+/* 2. Hero 2-Column Redesign */
+.hero { padding: 8rem 1.5rem 4rem; text-align: left; }
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: space-between;
+}
+.hero-image-col { flex: 0 0 320px; }
+.hero-img-wrapper {
+  width: 100%;
+  padding-bottom: 110%; /* Makes it a slight rectangle */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 4px solid var(--border-card);
+}
+.hero-profile-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text-col { flex: 1; }
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+.hero-summary {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.hero-pills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.pill-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition);
+}
+.pill-btn.primary {
+  background: var(--accent-light);
+  color: var(--bg-primary);
+}
+.pill-btn.primary:hover { background: #fff; transform: translateY(-2px); }
+.pill-btn.secondary {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+}
+.pill-btn.secondary:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.icon { font-weight: 800; color: var(--text-secondary); }
+.hero-location-text { font-size: 0.85rem; color: var(--text-dim); }
+
+/* Underlined section titles */
+.section-title-underlined {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid var(--border-card);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* 3. Education Tile Grid */
+.edu-layout-grid {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+.edu-image-container {
+  flex: 0 0 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+}
+.edu-uni-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.edu-cards-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.edu-tile {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all var(--transition);
+}
+.edu-tile:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.edu-tile-icon { font-size: 2rem; }
+.edu-tile-degree { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.25rem; }
+.edu-tile-school { color: var(--accent-light); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
+.edu-tile-date { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem; }
+.edu-tile-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* 4. Experience Rows */
+.experience-tile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.exp-row-tile {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all var(--transition);
+}
+.exp-row-tile:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+.exp-tile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.exp-tile-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.exp-briefcase-icon { font-size: 1.25rem; background: rgba(136, 136, 136, 0.1); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--border-card); }
+.exp-tile-role { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+.exp-tile-company { color: var(--text-dim); font-weight: 500; font-size: 1rem; }
+.exp-tile-date { color: var(--text-dim); font-size: 0.9rem; }
+.exp-tile-body { padding-left: 3.25rem; }
+
+/* 5. Tech Pills Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tech-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.tech-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.tech-icon { margin-right: 0.75rem; font-size: 1.4rem; padding: 0.5rem; border-radius: 8px; border: 1px solid var(--border-card); background: rgba(136, 136, 136, 0.05); }
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.skill-pill {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-card);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+.skill-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-light);
+}
+
+/* Responsiveness overrides for the new structures */
+@media (max-width: 900px) {
+  .hero-container { flex-direction: column; text-align: center; }
+  .hero-text-col { display: flex; flex-direction: column; align-items: center; }
+  .hero-img-wrapper { max-width: 300px; margin: 0 auto; }
+  .edu-layout-grid { flex-direction: column; }
+  .edu-image-container { display: none; } /* Hide uni image on small screens */
+  .tech-grid { grid-template-columns: 1fr; }
+  .social-sidebar { display: none; }
+}
+@media (max-width: 640px) {
+  .exp-tile-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .exp-tile-body { padding-left: 0; }
+  .edu-tile { flex-direction: column; text-align: center; }
 }
