@@ -121,7 +121,7 @@ document.addEventListener('click', (e) => {
 
 // Automatically tag elements we want to reveal
 document.querySelectorAll(
-  '.timeline-card, .project-card, .skill-group, .edu-card, .contact-card, .about-grid, .section-title, .section-sub'
+  '.exp-row-tile, .project-card, .tech-card, .edu-tile, .contact-card, .about-grid, .section-title-underlined, .section-title, .section-sub, .hero-text-col, .hero-img-wrapper'
 ).forEach(el => {
   el.classList.add('reveal');
 });
@@ -153,9 +153,10 @@ function staggerChildren (parentSelector, childSelector, delayStep = 80) {
 }
 
 staggerChildren('.projects-grid', '.project-card', 60);
-staggerChildren('.skills-grid',   '.skill-group',  80);
-staggerChildren('.contact-grid',  '.contact-card', 60);
-staggerChildren('.education-list','.edu-card',     80);
+staggerChildren('.tech-grid', '.tech-card', 80);
+staggerChildren('.contact-grid', '.contact-card', 60);
+staggerChildren('.edu-cards-column', '.edu-tile', 80);
+staggerChildren('.experience-tile-list', '.exp-row-tile', 80);
 
 
 /* ------------------------------------------
